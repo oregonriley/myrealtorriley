@@ -1,4 +1,4 @@
-# myrealtorriley — v0.3
+# myrealtorriley — v0.4
 
 A fast, static, multipage real-estate website for Riley Hoagland.
 
@@ -23,5 +23,11 @@ the site.
 ## Deployment
 GitHub Pages from `main` / `(root)`.
 
-## v0.3 change
+## v0.4 change
 Removed the bathroom/full-body photo entirely. The About page now opens with a strong text-led editorial section instead.
+
+## v0.4
+- Added four permanent property pages.
+- Listings page now links first to Riley's local property pages.
+- Each property page has a prominent direct link to the official MLS listing.
+- Zillow is no longer used as the property destination.
