@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://myrealtorriley.com/sitemap.xml
