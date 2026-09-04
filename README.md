@@ -1,12 +1,24 @@
-# myrealtorriley
+# myrealtorriley — v0.2
 
-Starter multipage site for Riley Hoagland.
+A fast, static, multipage real-estate website for Riley Hoagland.
+
+## Current pages
+- Home
+- About
+- Buy
+- Sell
+- Listings
+- Lincoln City
+- Contact
 
 ## Brand
-Coastal Brutalist + Warm Editorial.
+**Coastal Brutalist + Warm Editorial**
+Modern Oregon Coast, grounded masculine warmth, strong typography, real Riley.
 
-## Pages
-Home, About, Buy, Sell, Listings, Lincoln City, Contact.
+## Launch philosophy
+This version is intentionally shippable now. Better photography, automated listings,
+additional area guides, reviews and deeper resources can be added without redesigning
+the site.
 
-## Next
-Replace image placeholders, refine copy, add listings, and then turn on GitHub Pages.
+## Deployment
+GitHub Pages from `main` / `(root)`.

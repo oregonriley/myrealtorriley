@@ -1,1 +1,8 @@
-const t=document.querySelector('.menu-toggle'),n=document.querySelector('.nav');if(t&&n){t.addEventListener('click',()=>n.classList.toggle('open'));}
+const toggle=document.querySelector('.menu-toggle');
+const nav=document.querySelector('.nav');
+if(toggle&&nav){
+  toggle.addEventListener('click',()=>{
+    const open=nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded',String(open));
+  });
+}
