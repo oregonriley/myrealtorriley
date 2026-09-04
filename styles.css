@@ -424,3 +424,52 @@ p{margin-top:0}
 @media(max-width:520px){
   :root{--gutter:20px}
 }
+
+
+/* v0.6 — Lincoln City spacing/alignment cleanup */
+.local-intro{
+  padding-top:58px;
+  padding-bottom:52px;
+  gap:48px;
+  align-items:start;
+  border-top:1px solid var(--line);
+}
+.local-intro h2{
+  max-width:470px;
+}
+.local-intro .body-copy{
+  max-width:540px;
+}
+
+/* The generic .section padding made this grid nearly touch the viewport
+   and created a huge vertical gap. Give this grid its own editorial inset. */
+.local-issues{
+  width:calc(100% - (2 * var(--gutter)));
+  max-width:1045px;
+  margin:0 auto 82px;
+  padding:1px;
+}
+.local-issues article{
+  min-height:245px;
+  padding:30px 28px;
+}
+
+@media(max-width:880px){
+  .local-intro{
+    padding-top:48px;
+    padding-bottom:42px;
+    gap:24px;
+  }
+  .local-issues{
+    width:calc(100% - (2 * var(--gutter)));
+    margin-bottom:58px;
+  }
+  .local-issues article{
+    min-height:auto;
+  }
+}
+@media(max-width:520px){
+  .local-issues{
+    width:calc(100% - 40px);
+  }
+}
