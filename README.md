@@ -1,4 +1,4 @@
-# myrealtorriley — v0.2
+# myrealtorriley — v0.3
 
 A fast, static, multipage real-estate website for Riley Hoagland.
 
@@ -22,3 +22,6 @@ the site.
 
 ## Deployment
 GitHub Pages from `main` / `(root)`.
+
+## v0.3 change
+Removed the bathroom/full-body photo entirely. The About page now opens with a strong text-led editorial section instead.
