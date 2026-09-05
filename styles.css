@@ -473,3 +473,54 @@ p{margin-top:0}
     width:calc(100% - 40px);
   }
 }
+
+
+/* v0.9 — site capture */
+.capture-section{
+  display:grid;
+  grid-template-columns:.82fr 1.18fr;
+  gap:70px;
+  align-items:start;
+  border-top:1px solid var(--line);
+}
+.capture-intro{position:sticky;top:28px}
+.capture-intro h2{font-size:clamp(2.25rem,4.7vw,4.3rem)}
+.capture-intro>p:not(.eyebrow){max-width:480px;color:#4a544f;font-size:1.04rem}
+.capture-direct{display:flex;flex-direction:column;gap:8px;margin-top:28px;font-weight:760}
+.capture-direct a{width:max-content;border-bottom:1px solid currentColor}
+.capture-form{background:var(--paper-soft);border:1px solid var(--line);padding:34px;position:relative}
+.field-grid{display:grid;gap:18px}
+.field-grid.two{grid-template-columns:1fr 1fr}
+.capture-form label{display:block;margin-bottom:19px}
+.capture-form label>span:first-child{
+  display:block;font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;
+  font-weight:800;margin-bottom:7px
+}
+.capture-form input,.capture-form select,.capture-form textarea{
+  width:100%;border:1px solid rgba(29,37,33,.26);background:#fffdfa;color:var(--ink);
+  border-radius:0;padding:13px;font:inherit;line-height:1.25
+}
+.capture-form textarea{resize:vertical;min-height:125px}
+.capture-form input:focus,.capture-form select:focus,.capture-form textarea:focus{
+  outline:2px solid var(--slate);outline-offset:1px
+}
+.consent-line{display:flex!important;gap:10px;align-items:flex-start;font-size:.86rem;line-height:1.4}
+.consent-line input{width:auto!important;margin-top:3px}
+.consent-line span{
+  text-transform:none!important;letter-spacing:0!important;font-weight:500!important;margin:0!important
+}
+.submit-button{border:0;cursor:pointer}
+.form-note{margin:14px 0 0;font-size:.78rem;color:#66706a}
+.hp-field{
+  position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;
+  clip:rect(1px,1px,1px,1px)!important;white-space:nowrap!important
+}
+.thanks-hero{min-height:68vh;display:flex;flex-direction:column;justify-content:center}
+.listing-source-section{padding-top:72px;padding-bottom:72px;align-items:start}
+.listing-source-section .body-copy{max-width:560px}
+@media(max-width:880px){
+  .capture-section{grid-template-columns:1fr;gap:28px}
+  .capture-intro{position:static}
+  .field-grid.two{grid-template-columns:1fr;gap:0}
+  .capture-form{padding:25px}
+}

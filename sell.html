@@ -57,7 +57,97 @@
   </div>
 </section>
 
-<section class="contact-band"><div><p class="eyebrow">THINKING OF SELLING?</p><h2>Let's look at the property before you start spending money on it.</h2></div><a class="button light" href="contact.html">Talk about your property</a></section>
+
+<section class="section capture-section" id="seller-inquiry">
+  <div class="capture-intro">
+    <p class="eyebrow">START HERE</p>
+    <h2>Tell me about the property.</h2>
+    <p>If you're considering selling, start with the property and what you're trying to accomplish. You do not need to prep the house before talking to me.</p>
+    <div class="capture-direct">
+      <a href="tel:+15414181787">Call Riley · (541) 418-1787</a>
+      <a href="sms:+15414181787">Text Riley</a>
+    </div>
+  </div>
+  <form class="capture-form" method="POST" action="/api/lead">
+    <input type="hidden" name="lead_type" value="seller">
+    <input type="hidden" name="source_page" value="">
+    
+    <div class="hp-field" aria-hidden="true">
+      <label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+    </div>
+
+    <div class="field-grid two">
+      <label>
+        <span>Name *</span>
+        <input type="text" name="full_name" autocomplete="name" required>
+      </label>
+      <label>
+        <span>Preferred contact</span>
+        <select name="preferred_contact">
+          <option value="text">Text</option>
+          <option value="call">Call</option>
+          <option value="email">Email</option>
+          <option value="any">Whatever works</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="field-grid two">
+      <label>
+        <span>Phone</span>
+        <input type="tel" name="phone" autocomplete="tel">
+      </label>
+      <label>
+        <span>Email</span>
+        <input type="email" name="email" autocomplete="email">
+      </label>
+    </div>
+
+    
+<label>
+  <span>Property address *</span>
+  <input type="text" name="property_address" autocomplete="street-address" required placeholder="Street address, city">
+</label>
+<div class="field-grid two">
+  <label>
+    <span>Timing</span>
+    <select name="timing">
+      <option value="">Not sure yet</option>
+      <option>As soon as practical</option>
+      <option>Within 3 months</option>
+      <option>3–6 months</option>
+      <option>6–12 months</option>
+      <option>Just exploring value/options</option>
+    </select>
+  </label>
+  <label>
+    <span>Property is currently</span>
+    <select name="property_state">
+      <option value="">Choose one</option>
+      <option>Owner occupied</option>
+      <option>Tenant occupied</option>
+      <option>Vacation / second home</option>
+      <option>Vacant</option>
+    </select>
+  </label>
+</div>
+<label>
+  <span>What are you trying to accomplish?</span>
+  <textarea name="message" rows="5" placeholder="Price question, timing, repairs, an offer you've received, relocation, inherited property…"></textarea>
+</label>
+
+
+    <label class="consent-line">
+      <input type="checkbox" name="contact_consent" value="yes" required>
+      <span>It's okay for Riley to contact me about this request. *</span>
+    </label>
+
+    <button class="button primary submit-button" type="submit">Send to Riley</button>
+    <p class="form-note">No newsletter signup. No account. Just your question and a direct reply.</p>
+  </form>
+</section>
+
+<section class="contact-band"><div><p class="eyebrow">THINKING OF SELLING?</p><h2>Let's look at the property before you start spending money on it.</h2></div><a class="button light" href="#seller-inquiry">Start here</a></section>
 </main>
 <footer class="footer">
   <div class="footer-id">

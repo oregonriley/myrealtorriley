@@ -109,6 +109,69 @@
   </div>
 </section>
 
+
+<section class="section capture-section" id="property-inquiry">
+  <div class="capture-intro">
+    <p class="eyebrow">START HERE</p>
+    <h2>Ask me about this property.</h2>
+    <p>This comes directly to me as the listing broker with the property already attached to your inquiry.</p>
+    <div class="capture-direct">
+      <a href="tel:+15414181787">Call Riley · (541) 418-1787</a>
+      <a href="sms:+15414181787">Text Riley</a>
+    </div>
+  </div>
+  <form class="capture-form" method="POST" action="/api/lead">
+    <input type="hidden" name="lead_type" value="property">
+    <input type="hidden" name="source_page" value="">
+    <input type="hidden" name="property" value="5201 SW Hwy 101 #403, Lincoln City">
+    <div class="hp-field" aria-hidden="true">
+      <label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+    </div>
+
+    <div class="field-grid two">
+      <label>
+        <span>Name *</span>
+        <input type="text" name="full_name" autocomplete="name" required>
+      </label>
+      <label>
+        <span>Preferred contact</span>
+        <select name="preferred_contact">
+          <option value="text">Text</option>
+          <option value="call">Call</option>
+          <option value="email">Email</option>
+          <option value="any">Whatever works</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="field-grid two">
+      <label>
+        <span>Phone</span>
+        <input type="tel" name="phone" autocomplete="tel">
+      </label>
+      <label>
+        <span>Email</span>
+        <input type="email" name="email" autocomplete="email">
+      </label>
+    </div>
+
+    
+<label>
+  <span>Your question about this property *</span>
+  <textarea name="message" rows="5" required placeholder="Availability, showing, rental rules, condition, offer questions…"></textarea>
+</label>
+
+
+    <label class="consent-line">
+      <input type="checkbox" name="contact_consent" value="yes" required>
+      <span>It's okay for Riley to contact me about this request. *</span>
+    </label>
+
+    <button class="button primary submit-button" type="submit">Send to Riley</button>
+    <p class="form-note">No newsletter signup. No account. Just your question and a direct reply.</p>
+  </form>
+</section>
+
 <section class="listing-disclaimer">
   <p>Short-term-rental eligibility, permits and current local requirements should be independently verified.</p>
   <p>Information is deemed reliable but is not guaranteed. Buyers should independently verify material facts, availability, square footage, schools, zoning, rental eligibility, HOA information and other items important to their purchase.</p>

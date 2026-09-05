@@ -61,7 +61,111 @@
   </div>
 </section>
 
-<section class="contact-band"><div><p class="eyebrow">LOOKING?</p><h2>Tell me what kind of coast you're trying to find.</h2></div><a class="button light" href="contact.html">Talk to Riley</a></section>
+
+<section class="section capture-section" id="buyer-inquiry">
+  <div class="capture-intro">
+    <p class="eyebrow">START HERE</p>
+    <h2>Tell me what you're looking for.</h2>
+    <p>You don't need to have everything figured out. Give me enough to understand the kind of coast, property, timing, or problem you're working through.</p>
+    <div class="capture-direct">
+      <a href="tel:+15414181787">Call Riley · (541) 418-1787</a>
+      <a href="sms:+15414181787">Text Riley</a>
+    </div>
+  </div>
+  <form class="capture-form" method="POST" action="/api/lead">
+    <input type="hidden" name="lead_type" value="buyer">
+    <input type="hidden" name="source_page" value="">
+    
+    <div class="hp-field" aria-hidden="true">
+      <label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+    </div>
+
+    <div class="field-grid two">
+      <label>
+        <span>Name *</span>
+        <input type="text" name="full_name" autocomplete="name" required>
+      </label>
+      <label>
+        <span>Preferred contact</span>
+        <select name="preferred_contact">
+          <option value="text">Text</option>
+          <option value="call">Call</option>
+          <option value="email">Email</option>
+          <option value="any">Whatever works</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="field-grid two">
+      <label>
+        <span>Phone</span>
+        <input type="tel" name="phone" autocomplete="tel">
+      </label>
+      <label>
+        <span>Email</span>
+        <input type="email" name="email" autocomplete="email">
+      </label>
+    </div>
+
+    
+<div class="field-grid two">
+  <label>
+    <span>Areas you're considering</span>
+    <input type="text" name="areas" placeholder="Lincoln City, Neskowin, Depoe Bay…">
+  </label>
+  <label>
+    <span>Approximate price range</span>
+    <select name="price_range">
+      <option value="">Not sure yet</option>
+      <option>Under $350k</option>
+      <option>$350k–$500k</option>
+      <option>$500k–$750k</option>
+      <option>$750k–$1M</option>
+      <option>$1M+</option>
+    </select>
+  </label>
+</div>
+<div class="field-grid two">
+  <label>
+    <span>What are you buying?</span>
+    <select name="purchase_type">
+      <option value="">Still figuring it out</option>
+      <option>Primary home</option>
+      <option>Second home</option>
+      <option>Investment property</option>
+      <option>Condo</option>
+      <option>Land</option>
+    </select>
+  </label>
+  <label>
+    <span>Timing</span>
+    <select name="timing">
+      <option value="">Not sure yet</option>
+      <option>Now / actively looking</option>
+      <option>Within 3 months</option>
+      <option>3–6 months</option>
+      <option>6–12 months</option>
+      <option>Just researching</option>
+    </select>
+  </label>
+</div>
+<label>
+  <span>What should I know?</span>
+  <textarea name="message" rows="5" placeholder="Tell me what you're looking for, what you've seen, or what you're trying to figure out."></textarea>
+</label>
+
+
+    <label class="consent-line">
+      <input type="checkbox" name="contact_consent" value="yes" required>
+      <span>It's okay for Riley to contact me about this request. *</span>
+    </label>
+
+    <button class="button primary submit-button" type="submit">Send to Riley</button>
+    <p class="form-note">No newsletter signup. No account. Just your question and a direct reply.</p>
+  </form>
+</section>
+
+<section class="contact-band"><div><p class="eyebrow">LOOKING?</p><h2>Tell me what kind of coast you're trying to find.</h2></div><a class="button light" href="#buyer-inquiry">Start here</a></section>
 </main>
 <footer class="footer">
   <div class="footer-id">

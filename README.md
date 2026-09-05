@@ -47,3 +47,16 @@ Removed the bathroom/full-body photo entirely. The About page now opens with a s
 ## v0.7 launch
 - Removed the entire “Useful local pages, not keyword farms” section from the Lincoln City page.
 - The six local-property topic cards now flow directly into the Lincoln City contact CTA.
+
+## v0.9 — Site Capture
+Forms added to:
+- every individual listing page
+- Buy
+- Sell
+- Contact
+
+Submissions POST to `/api/lead`, a Cloudflare Pages Function.
+The Function stores leads in a D1 database bound as `LEADS_DB`.
+`schema.sql` creates the lead inbox table.
+
+This is Step #2. Follow Up Boss is intentionally not connected yet.
