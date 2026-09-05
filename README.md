@@ -60,3 +60,10 @@ The Function stores leads in a D1 database bound as `LEADS_DB`.
 `schema.sql` creates the lead inbox table.
 
 This is Step #2. Follow Up Boss is intentionally not connected yet.
+
+## v1.0 — Compliance / representation pass
+- Added a prominent brokerage/identity bar to every public page:
+  Riley Hoagland · Oregon Broker · Oregon Life Homes · license #201226143 · Se habla español.
+- Strengthened the footer with Oregon Life Homes, license information, Equal Housing Opportunity language, Spanish-language representation, and current-information disclaimer.
+- Added visible Spanish-language welcome sections to Home and Contact.
+- Removed stale homepage copy that incorrectly described the Listings page as routing to Zillow.
