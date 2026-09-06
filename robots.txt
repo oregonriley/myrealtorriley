@@ -4,4 +4,7 @@ Allow: /
 User-agent: OAI-SearchBot
 Allow: /
 
-Sitemap: https://myrealtorriley.com/sitemap.xml
+User-agent: ChatGPT-User
+Allow: /
+
+Sitemap: https://coastalriley.com/sitemap.xml
